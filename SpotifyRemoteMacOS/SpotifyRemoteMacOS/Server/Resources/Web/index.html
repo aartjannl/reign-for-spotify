@@ -1,75 +1,1 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Reign on %%PAGE_TITLE%%</title>
-  <meta name="description" content="">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-  <link rel="stylesheet" href="style.css">
-  <script src="jquery.js"></script>
-  <script src="modernizr.min.js"></script>
-  <script src="dragdrop.js"></script>
-</head>
-<body>
-  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  <header id="header" class="container">
-    <h1>%%WELCOME_TEXT%%</h1>
-    <form id="search_song" action="#" method="post">
-        <fieldset>
-        <input id="search_keywords" name="keywords" type="text" placeholder="Artist - Song">
-        <input name="submig" type="submit" value="Search">
-        </fieldset>
-    </form>
-  </header>
-  <div id="main" class="container">
-    <h2 class="visuallyhidden">Controls:</h2>
-    <nav id="controls">
-      <ol class="clearfix">
-        <li><a id="previous" href="/previous">Previous</a></li>
-        <li><a id="playpause" href="/playpause">Play/Pause</a></li>
-        <li><a id="next" href="/next">Next</a></li>
-      </ol>
-    </nav>
-    <h2 class="visuallyhidden">Playlist</h2>
-    <ul id="playlist">
-      <li>
-        <div>
-          <a href="%%SPOTIFY_URL%%"><img class="track_cover" src="%%TRACK_COVER%%" /></a>
-        </div>
-        <div>
-          <a class="now_playing" href="%%SPOTIFY_URL%%">%%NOW_PLAYING%%</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <footer id="footer" class="container">
-    <a class="get_reign" href="http://reignalot.com" target="_blank">Get Reign for Spotify</a>
-  </footer>
-  <div id="searchlist">
-  <!-- The searchlist should contain a close button -->
-    <div class="title">
-        Song Search
-        <div id="closesearchbutton" class="closebutton" >close</div>
-        <div style="clear:both;"></div>
-    </div>
-    <div class="listbox">
-      <div class="" id="songlist">
-      </div>
-    </div>
-  <!-- And the list of matching tracks -->
-  </div>
-  <script src="script.js"></script>
-
-  <script>
-    var _gaq=[['_setAccount','UA-27275793-8'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src='https://www.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
-</body>
-</html>
+<!doctype html><!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]--><!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]--><!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]--><!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]--><head>  <meta charset="utf-8">  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  <title>Reign Spotify on %%PAGE_TITLE%%</title>  <meta name="description" content=""><!-- Added or changed by AART --><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=1"><!-- End AART -->    <link rel="stylesheet" href="style.css">  <script src="jquery.js"></script>  <script src="modernizr.min.js"></script>  <script src="dragdrop.js"></script></head><body>  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->  <header id="header" class="container">      <!--h1>%%WELCOME_TEXT%%</h1-->    <form id="search_song" action="#" method="post" >        <fieldset>        <input id="search_keywords" name="keywords" type="text" placeholder="Artist - Song"><!--added class AART--><input name="submig" type="submit" value="zoek" class="subm" ><!--END AART-->        </fieldset>    </form>  </header>    <div id="main" class="container" >     <!--added background AART--><div id=bgaj><img class="track_cover" src="%%TRACK_COVER%%" /></div><!--END AART-->       <h2 class="visuallyhidden">Controls:</h2>    <nav id="controls">      <ol class="clearfix">        <li><a id="previous" href="/previous">Previous</a></li>        <li><a id="playpause" href="/playpause">Play/Pause</a></li>        <li><a id="next" href="/next">Next</a></li>      </ol>    </nav>    <h2 class="visuallyhidden">Playlist</h2>    <ul id="playlist">      <li>        <div>        <!--added classes, removed link – AART--><img class="track_cover aart" src="%%TRACK_COVER%%"/><div class="now" ><!--END AART-->          <a class="now_playing" href="%%SPOTIFY_URL%%">%%NOW_PLAYING%%</a>        </div>      </li>    </ul>  </div>  <!--footer id="footer" class="container">    <a class="get_reign" href="http://reignalot.com" target="_blank">Get Reign for Spotify</a>  </footer-->    <div id="searchlist">  <!-- The searchlist should contain a close button -->    <div class="title">        Song Search (by Echonest)        <div id="closesearchbutton" class="closebutton" >close</div>        <div style="clear:both;"></div>    </div>    <div class="listbox">      <div class="" id="songlist">      </div>    </div>  <!-- And the list of matching tracks -->    </div>  <script src="script.js"></script>  <script>    var _gaq=[['_setAccount','UA-27275793-8'],['_trackPageview']];    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];    g.src='https://www.google-analytics.com/ga.js';    s.parentNode.insertBefore(g,s)}(document,'script'));  </script></body></html>
